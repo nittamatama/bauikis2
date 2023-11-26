@@ -71,3 +71,6 @@ group :test do
   gem "rspec-rails"
   gem "factory_bot_rails", "~> 6.2", "< 6.3"
 end
+
+gem 'slim-rails'
+gem 'html2slim'
