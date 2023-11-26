@@ -68,5 +68,6 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-
+  gem "rspec-rails"
+  gem "factory_bot_rails", "~> 6.2", "< 6.3"
 end
