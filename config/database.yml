@@ -16,3 +16,7 @@ development:
 test:
   <<: *default
   database: bauikis2_test
+
+production:
+  <<: *default
+  database: bauikis2_production

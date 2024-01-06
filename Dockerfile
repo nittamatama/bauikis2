@@ -1,5 +1,8 @@
 FROM --platform=linux/x86_64 ruby:3.1
 
+RUN apt-get update
+RUN apt-get install -y vim
+
 RUN mkdir /bauikis2
 WORKDIR /bauikis2
 COPY Gemfile ./Gemfile
