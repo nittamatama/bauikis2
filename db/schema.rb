@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_06_114341) do
+ActiveRecord::Schema[7.0].define(version: 2024_01_07_084858) do
+  create_table "administrators", charset: "utf8", force: :cascade do |t|
+    t.string "email"
+    t.string "hashed_password"
+    t.boolean "suspended"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_administrators_on_email", unique: true
+  end
+
   create_table "staff_members", charset: "utf8", force: :cascade do |t|
     t.string "email", null: false
     t.string "family_name", null: false
