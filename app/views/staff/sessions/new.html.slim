@@ -1,0 +1,15 @@
+- @title = "ログイン"
+
+#login-form
+  h1
+    = @title
+
+  = form_with model: @form, url: :staff_session do |f|
+    .
+      = f.label :email, "メールアドレス"
+      = f.text_field :email
+    .
+      = f.label :password, "パスワード"
+      = f.text_field :password
+    .
+      = f.submit "ログイン"
